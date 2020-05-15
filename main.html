@@ -63,7 +63,25 @@
       </div>
     </nav>
     <!--main 화면 img들어갈 것-->
-    <main>
+    <article class="all-browers">
+      <script>
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 200) {
+            $(".top").fadeIn();
+          } else {
+            $(".top").fadeOut();
+          }
+        });
+
+        $(".top").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 400);
+          return false;
+        });
+      </script>
+      <!-- 위로 올라가기 버튼-->
+      <div class="d-flex justify-content-end">
+        <a href="#" class="top">Top</a>
+      </div>
       <div class="hr-sect mb-5">PRODUCT</div>
 
       <!--상품 이미지슬라이드 들어갈 곳-->
@@ -97,18 +115,18 @@
       <div class="hr-sect mt-5 mb-5">FEATURED ITEMS</div>
 
       <!-- 상품 갤러리 마우스 오버시 두가지 이미지-->
-      <div class="d-flex flex-wrap justify-content-center">
-        <div class="img-over m-3">
+      <div class="row justify-content-center">
+        <div class="col-sm-3 img-over">
           <a href="#" id="img1"></a>
         </div>
-        <div class="img-over m-3">
+        <div class="col-sm-3 img-over">
           <a href="#" id="img1"></a>
         </div>
-        <div class="img-over m-3">
+        <div class="col-sm-3 img-over">
           <a href="#" id="img1"></a>
         </div>
       </div>
-    </main>
+    </article>
   </body>
 
   <!-- footer include -->

@@ -15,8 +15,9 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="./admin-main.css" />
+    <link rel="stylesheet" href="../main.css" />
   </head>
   <body>
     <!--header include-->
@@ -26,7 +27,7 @@
           <!-- input 검색창-->
           <li class="nav-item nav-input">
             <input class="input-style" />
-            <img src="./img/scope.png" class="scope" />
+            <img src="../img/scope.png" class="scope" />
           </li>
           <!-- annonimous& authentication-->
           <li class="nav-item">
@@ -49,18 +50,41 @@
     <nav
       class="navbar navbar-expand-sm bg-white d-flex ml-5 mt-5 mb-5 sticky-top"
     >
-      <a href="main.html" class="red-text mr-5 h-title"><h2>NAVIYA</h2></a>
+      <a href="../main.html" class="red-text mr-5 h-title"><h2>NAVIYA</h2></a>
       <div class="d-flex">
-        <a class="nav-link black-text" href="shopList.html">SHOP</a>
-        <a class="nav-link black-text" href="sponsor.html">고객센터</a>
+        <a class="nav-link black-text" href="../shopList.html">SHOP</a>
+        <a class="nav-link black-text" href="../sponsor.html">고객센터</a>
         <a class="nav-link black-text" href="./admin/admin-main.html">관리자</a>
       </div>
     </nav>
     <!--main 화면 img들어갈 것-->
     <article class="all-browsers">
-      <div class="hr-sect mb-5">PRODUCT</div>
+
+      <div class="hr-sect ">PRODUCT</div>
+      
+      <div class="container">
+        <div class="row">
+            <aside class="col-2 px-0  " id="left" style="top:250px; position: fixed; left: 0;">
+    
+                <div class="list-group w-100">
+                    <a href="#" class="list-group-item ">회원관리</a>
+                    <a href="#" class="list-group-item">상품관리</a>
+                    <a href="#" class="list-group-item">주문관리</a>
+                    <a href="#" class="list-group-item">게시판관리</a>
+                    <a href="#" class="list-group-item">리뷰관리</a>
+                    <a href="#" class="list-group-item">재고관리</a>
+                </div>
+    
+            </aside>
+          
+            <main class="col offset-2 h-100 user-main">
+            </main>
+        </div>
+    </div>
+    
+      
     </article>
-  </body>
+
 
   <!-- footer include -->
   <footer class="bg-gray mt-5">

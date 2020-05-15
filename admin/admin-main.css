@@ -40,3 +40,29 @@
     font-size: 18px;
   }
 }
+
+.sidebar-st {
+  position: fixed;
+  scroll-behavior: auto;
+  border-right: 1px solid #252c41;
+  width: 160px;
+  height: 400px;
+  text-align: center;
+}
+
+.side-btn {
+  text-decoration: none;
+  background-color: white;
+}
+
+.side-btn:hover {
+  text-decoration: none;
+  background-color: transparent !important;
+}
+
+.in-ck-box {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
