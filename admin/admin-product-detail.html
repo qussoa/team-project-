@@ -59,8 +59,8 @@
     </nav>
     <!--main 화면 img들어갈 것-->
     <article class="all-browsers">
+
       <div class="hr-sect">ADMIN</div>
-      
       <div class="container">
         <div class="row">
             <aside class="col-2 px-0  " id="left" style="top:250px; position: fixed; left: 0;">
@@ -79,6 +79,70 @@
             </aside>
           
             <main class="col offset-2 h-100 user-main">
+                <!--detail pages 정보 -->
+      <div class="container">
+        <div class="row">
+          <img
+            src="../img/dress1.jpg"
+            style="width: 450px; height: 400px; margin-right: 70px;"
+          />
+          <!--detail box-->
+          <div
+            class="detail-box"
+            style="margin-left: 70px; margin-bottom: 100px;"
+          >
+            <div class="mb-3 mt-5">
+              <h2 class="black-text">White pants</h2>
+              <span>15000won</span>
+            </div>
+            <hr style="border: 1px solid #252c41;" />
+            <br />
+
+            <div class="col">
+              <label class="mr-5">COLOR/SIZE</label>
+              <ul class="menu">
+                <li>BLACK S(20)</li>
+                <li>BLACK M(20)</li>
+                <li>BLACK L(20)</li>
+                <li>RED S(20)</li>
+                <li>RED M(20)</li>
+                <li>RED L(20)</li>
+                <li>WHITE S(20)</li>
+                <li>WHITE M(20)</li>
+                <li>WHITE L(20)</li>
+              </ul>
+            </div>
+            <div class="col mb-5">
+              <label class="mr-5">QUAN·TITY</label>
+              <span>180개</span>
+              <br/>
+              <lavel class="mr-5">TOTAL</lavel>
+              <span>2,700,000won</span>
+            </div>
+
+            <!-- 장바구니 상품 button -->
+            <div class="d-flex justify-content-end mb-5">
+              <button
+                class="mr-2 bt-bbs-style ad-pro-list"
+                onclick="$(document).on('click','.ad-pro-list',function(){document.location.href='admin-pro-list.html'})"
+              >
+                목록
+              </button>
+              <!-- 회원일시 보이는 버튼-->
+              <button
+                class="mr-2 bt-bbs-style ad-pro-update"
+                onclick="$(document).on('click','.ad-pro-update',function(){document.location.href='admin-userdetail-update.html'})"
+              >
+                수정
+              </button>
+              <button class="mr-2 bt-bbs-style">
+                삭제
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
             </main>
         </div>
     </div>

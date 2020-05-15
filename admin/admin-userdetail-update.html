@@ -81,7 +81,7 @@
           <main class="col offset-2 h-100 user-main">
             <div class="row bg-light">
               <div class="col-12 py-4 text-center">
-                <span style="font-size: 30px;">회원상세정보관리</span>
+                <span style="font-size: 30px;">회원상세수정관리</span>
               </div>
             </div>
             <!--userdetail 정보-->
@@ -92,102 +92,83 @@
                     <span>회원 코드 : 1</span>
                     <span class="ml-5">qussoa</span>
                     <hr />
-                    <table
-                      style="
-                        justify-content: center;
-                        margin: 0 auto;
-                        align-items: center;
-                      "
-                    >
-                      <tr>
-                        <th class="text-left">이름</th>
-                        <td class="p-2">이정연</td>
-                      </tr>
-                      <tr>
-                        <th class="text-left">전화번호</th>
-                        <td class="p-2">010-4053-9404</td>
-                      </tr>
-                      <tr>
-                        <th class="text-left">주소</th>
-                        <td class="p-2">광주광역시 남구</td>
-                      </tr>
-                      <tr>
-                        <th class="text-left">이메일</th>
-                        <td class="p-2">
-                          qussoa@naver.com
-                        </td>
-                      </tr>
-                    </table>
+                    <form class="container">
+                      <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label"
+                          >이름</label
+                        >
+                        <div class="col-sm-10">
+                          <input
+                            type="text"
+                            class="form-control-plaintext"
+                            id="staticEmail"
+                            placeholder="이름을 입력하세요"
+                          />
+                        </div>
+                        <label for="staticEmail" class="col-sm-2 col-form-label"
+                          >전화번호</label
+                        >
+                        <div class="col-sm-10">
+                          <input
+                            type="tel"
+                            class="form-control-plaintext"
+                            id="staticEmail"
+                            placeholder="전화번호를 입력해주세요"
+                          />
+                        </div>
+                        <label for="staticEmail" class="col-sm-2 col-form-label"
+                          >주소</label
+                        >
+                        <div class="col-sm-10">
+                          <input
+                            type="text"
+                            class="form-control-plaintext"
+                            id="staticEmail"
+                            placeholder="주소를 입력하세요"
+                          />
+                        </div>
+                        <label for="staticEmail" class="col-sm-2 col-form-label"
+                          >이메일</label
+                        >
+                        <div class="col-sm-10">
+                          <input
+                            type="email"
+                            class="form-control-plaintext"
+                            id="staticEmail"
+                            placeholder="이메일을 입력하세요"
+                          />
+                        </div>
+                        <select class="custom-select custom-select-sm">
+                          <option selected>권한을 설정해주세요</option>
+                          <option value="1">ROLE_ADMIN</option>
+                          <option value="2">ROLE_USER</option>
+                          <option value="3">ADMIN</option>
+                          <option value="3">USER</option>
+                        </select>
+                      </div>
+                    </form>
+                    <!--button group-->
                     <div class="d-flex justify-content-end mb-5">
                       <button
-                        class="mr-2 bt-bbs-style ad-us-list"
-                        onclick="$(document).on('click','.ad-us-list',function(){document.location.href='admin-main.html'})"
+                        class="mr-2 bt-bbs-style bt-bbs-list"
+                        onclick="$(document).on('click','.bt-bbs-list',function(){document.location.href='admin-pro-list.html'})"
                       >
                         목록
                       </button>
                       <!-- 회원일시 보이는 버튼-->
                       <button
-                        class="mr-2 bt-bbs-style ad-us-update"
-                        onclick="$(document).on('click','.ad-us-update',function(){document.location.href='admin-userdetail-update.html'})"
+                        class="mr-2 bt-bbs-style bt-bbs-update"
+                        onclick="$(document).on('click','.bt-bbs-update',function(){document.location.href='admin-userdetail.html'})"
                       >
-                        수정
-                      </button>
-                      <button class="mr-2 bt-bbs-style">
-                        삭제
+                        저장
                       </button>
                     </div>
-                    <!-- review 정보 가져오기-->
-                    <div class="container col mt-4">
-                      <span>상품 구매 이력</span>
-                      <div class="container" style="border: 1px solid #c6cad4;">
-                        <p class="mr-5">
-                          상품이름 : 금액 : 날짜
-                        </p>
-                        <small
-                          onclick="$(document).on('click','small',function(){document.location.href='../shopDetail.html'})"
-                        >
-                          White pants : 15000 : 2020-05-13
-                        </small>
-                      </div>
-                    </div>
-                    <!--review 정보 box end-->
-                    <!-- review 정보 가져오기-->
-                    <div class="container col mt-4">
-                      <span>댓글</span>
-                      <div class="container" style="border: 1px solid #c6cad4;">
-                        <p class="mr-5">
-                          상품이름 : 리뷰내용 : 날짜
-                        </p>
-                        <small
-                          onclick="$(document).on('click','small',function(){document.location.href='../shopDetail.html'})"
-                        >
-                          White pants : Lorem ipsum dolor sit amet, consectetur
-                          adipiscing elit. : 2020-05-13
-                        </small>
-                      </div>
-                    </div>
-                    <!--review 정보 box end-->
-                    <!--고객센터 게시판 글-->
-                    <div class="container col mt-4">
-                      <span>고객센터</span>
-                      <div class="container" style="border: 1px solid #c6cad4;">
-                        <p class="mr-5">
-                          게시판 제목 : 내용 : 날짜
-                        </p>
-                        <small
-                          onclick="$(document).on('click','small',function(){document.location.href='../sponsor.html'})"
-                        >
-                          White pants : Lorem ipsum dolor sit amet, consectetur
-                          adipiscing elit. : 2020-05-13
-                        </small>
-                      </div>
-                    </div>
+                    <!--button group end-->
+                    <!--container end-->
                   </div>
-                  <!--card body end-->
                 </div>
               </div>
             </div>
-            <!--userdetail 정보 end-->
           </main>
         </div>
       </div>
