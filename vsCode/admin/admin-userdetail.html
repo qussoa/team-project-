@@ -69,12 +69,19 @@
             style="top: 250px; position: fixed; left: 0;"
           >
             <div class="list-group w-100">
-              <a href="admin-main.html" class="list-group-item">회원관리</a>
+              <a href="admin-main.html" class="list-group-item">관리자 홈</a>
+              <a href="admin-user-list.html" class="list-group-item"
+                >회원관리</a
+              >
               <a href="admin-pro-list.html" class="list-group-item">상품관리</a>
-              <a href="#" class="list-group-item">주문관리</a>
-              <a href="#" class="list-group-item">재고관리</a>
-              <a href="#" class="list-group-item">리뷰관리</a>
-              <a href="#" class="list-group-item">Q&A관리</a>
+              <a href="admin-order-list.html" class="list-group-item"
+                >주문관리</a
+              >
+              <a href="admin-qty-list.html" class="list-group-item">재고관리</a>
+              <a href="admin-review-list.html" class="list-group-item"
+                >리뷰관리</a
+              >
+              <a href="admin-qna-list.html" class="list-group-item">Q&A관리</a>
             </div>
           </aside>
           <!--page include-->
@@ -117,6 +124,12 @@
                           qussoa@naver.com
                         </td>
                       </tr>
+                      <tr>
+                        <th class="text-left">권한정보</th>
+                        <td class="p-2">
+                          ROLE_ADMIN, ADMIN
+                        </td>
+                      </tr>
                     </table>
                     <div class="d-flex justify-content-end mb-5">
                       <button
@@ -147,6 +160,22 @@
                           onclick="$(document).on('click','small',function(){document.location.href='../shopDetail.html'})"
                         >
                           White pants : 15000 : 2020-05-13
+                        </small>
+                      </div>
+                    </div>
+                    <!--review 정보 box end-->
+                    <!-- review 정보 가져오기-->
+                    <div class="container col mt-4">
+                      <span>상품 문의사항(Q&A)</span>
+                      <div class="container" style="border: 1px solid #c6cad4;">
+                        <p class="mr-5">
+                          상품이름 : 문의내용 : 날짜
+                        </p>
+                        <small
+                          onclick="$(document).on('click','small',function(){document.location.href='../shopDetail.html'})"
+                        >
+                          White pants : Lorem ipsum dolor sit amet, consectetur
+                          adipiscing elit. : 2020-05-13
                         </small>
                       </div>
                     </div>

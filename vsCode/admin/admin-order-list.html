@@ -69,104 +69,100 @@
             style="top: 250px; position: fixed; left: 0;"
           >
             <div class="list-group w-100">
-              <a href="admin-main.html" class="list-group-item">회원관리</a>
+              <a href="admin-main.html" class="list-group-item">관리자 홈</a>
+              <a href="admin-user-list.html" class="list-group-item"
+                >회원관리</a
+              >
               <a href="admin-pro-list.html" class="list-group-item">상품관리</a>
-              <a href="#" class="list-group-item">주문관리</a>
-              <a href="#" class="list-group-item">재고관리</a>
-              <a href="#" class="list-group-item">리뷰관리</a>
-              <a href="#" class="list-group-item">Q&A관리</a>
+              <a href="admin-order-list.html" class="list-group-item"
+                >주문관리</a
+              >
+              <a href="admin-qty-list.html" class="list-group-item">재고관리</a>
+              <a href="admin-review-list.html" class="list-group-item"
+                >리뷰관리</a
+              >
+              <a href="admin-qna-list.html" class="list-group-item">Q&A관리</a>
             </div>
           </aside>
-          <!--page include-->
+
           <main class="col offset-2 h-100 user-main">
             <div class="row bg-light">
               <div class="col-12 py-4 text-center">
-                <span style="font-size: 30px;">회원상세수정관리</span>
+                <span style="font-size: 30px;">주문관리</span>
               </div>
             </div>
-            <!--userdetail 정보-->
             <div class="row bg-white">
               <div class="col-12 py-4">
-                <div class="card">
-                  <div class="card-body">
-                    <span>회원 코드 : 1</span>
-                    <span class="ml-5">qussoa</span>
-                    <hr />
-                    <form class="container">
-                      <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label"
-                          >이름</label
+                <table class="table" style="width: 100%;">
+                  <thead>
+                    <tr>
+                      <th class="in-ck-box">NO</th>
+                      <th class="in-ck-box">회원ID</th>
+                      <th class="in-ck-box">회원주소</th>
+                      <th class="in-ck-box">상품이름</th>
+                      <th class="in-ck-box">상품가격</th>
+                      <th class="in-ck-box">상품수량</th>
+                      <th class="in-ck-box">상품총가격</th>
+                      <th class="in-ck-box">주문일자</th>
+                      <th class="in-ck-box">주문현황</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="in-ck-box td-click">1</td>
+                      <td class="in-ck-box td-click">qussoa</td>
+                      <td class="in-ck-box td-click">백운동</td>
+                      <td class="in-ck-box td-click">White pants</td>
+                      <td class="in-ck-box td-click">15000</td>
+                      <td class="in-ck-box td-click">10</td>
+                      <td class="in-ck-box td-click">1500000</td>
+                      <td class="in-ck-box td-click">2020-05-17</td>
+                      <td class="in-ck-box td-click">배송중</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <!--pagination-->
+                <div class="d-flex justify-content-center">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a
+                          class="page-link black-text"
+                          href="#"
+                          aria-label="Previous"
                         >
-                        <div class="col-sm-10">
-                          <input
-                            type="text"
-                            class="form-control-plaintext"
-                            id="staticEmail"
-                            placeholder="이름을 입력하세요"
-                          />
-                        </div>
-                        <label for="staticEmail" class="col-sm-2 col-form-label"
-                          >전화번호</label
+                          <span aria-hidden="true" class="black-text"
+                            >&laquo;</span
+                          >
+                          <span class="sr-only">Previous</span>
+                        </a>
+                      </li>
+                      <li class="page-item black-text">
+                        <a class="page-link black-text" href="#">1</a>
+                      </li>
+                      <li class="page-item black-text">
+                        <a class="page-link black-text" href="#">2</a>
+                      </li>
+                      <li class="page-item black-text">
+                        <a class="page-link black-text" href="#">3</a>
+                      </li>
+                      <li class="page-item black-text">
+                        <a
+                          class="page-link black-text"
+                          href="#"
+                          aria-label="Next"
                         >
-                        <div class="col-sm-10">
-                          <input
-                            type="tel"
-                            class="form-control-plaintext"
-                            id="staticEmail"
-                            placeholder="전화번호를 입력해주세요"
-                          />
-                        </div>
-                        <label for="staticEmail" class="col-sm-2 col-form-label"
-                          >주소</label
-                        >
-                        <div class="col-sm-10">
-                          <input
-                            type="text"
-                            class="form-control-plaintext"
-                            id="staticEmail"
-                            placeholder="주소를 입력하세요"
-                          />
-                        </div>
-                        <label for="staticEmail" class="col-sm-2 col-form-label"
-                          >이메일</label
-                        >
-                        <div class="col-sm-10">
-                          <input
-                            type="email"
-                            class="form-control-plaintext"
-                            id="staticEmail"
-                            placeholder="이메일을 입력하세요"
-                          />
-                        </div>
-                        <select class="custom-select custom-select-sm">
-                          <option selected>권한을 설정해주세요</option>
-                          <option value="1">ROLE_ADMIN</option>
-                          <option value="2">ROLE_USER</option>
-                          <option value="3">ADMIN</option>
-                          <option value="3">USER</option>
-                        </select>
-                      </div>
-                    </form>
-                    <!--button group-->
-                    <div class="d-flex justify-content-end mb-5">
-                      <button
-                        class="mr-2 bt-bbs-style bt-bbs-list"
-                        onclick="$(document).on('click','.bt-bbs-list',function(){document.location.href='admin-pro-list.html'})"
-                      >
-                        목록
-                      </button>
-                      <!-- 회원일시 보이는 버튼-->
-                      <button
-                        class="mr-2 bt-bbs-style bt-bbs-update"
-                        onclick="$(document).on('click','.bt-bbs-update',function(){document.location.href='admin-userdetail.html'})"
-                      >
-                        저장
-                      </button>
-                    </div>
-                    <!--button group end-->
-                    <!--container end-->
-                  </div>
+                          <span aria-hidden="true" class="black-text"
+                            >&raquo;</span
+                          >
+                          <span class="sr-only black-text">Next</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
+                <!--pagination end-->
               </div>
             </div>
           </main>
@@ -174,6 +170,7 @@
       </div>
     </article>
   </body>
+
   <!-- footer include -->
   <footer class="bg-gray mt-5">
     <div class="container p-5">

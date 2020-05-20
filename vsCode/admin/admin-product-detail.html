@@ -59,110 +59,102 @@
     </nav>
     <!--main 화면 img들어갈 것-->
     <article class="all-browsers">
+
       <div class="hr-sect">ADMIN</div>
       <div class="container">
-        <!--sidebar-->
         <div class="row">
-          <aside
-            class="col-2 px-0"
-            id="left"
-            style="top: 250px; position: fixed; left: 0;"
-          >
-            <div class="list-group w-100">
-              <a href="admin-main.html" class="list-group-item">회원관리</a>
-              <a href="admin-pro-list.html" class="list-group-item">상품관리</a>
-              <a href="#" class="list-group-item">주문관리</a>
-              <a href="#" class="list-group-item">재고관리</a>
-              <a href="#" class="list-group-item">리뷰관리</a>
-              <a href="#" class="list-group-item">Q&A관리</a>
-            </div>
-          </aside>
-          <!--page include-->
-          <main class="col offset-2 h-100 user-main">
-            <div class="row bg-light">
-              <div class="col-12 py-4 text-center">
-                <span style="font-size: 30px;">회원관리</span>
-              </div>
-            </div>
-            <div class="row bg-white">
-              <div class="col-12 py-4">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th class="in-ck-box">SEQ</th>
-                      <th class="in-ck-box">USER.ID</th>
-                      <th class="in-ck-box">AUTHORITY</th>
-                      <th class="in-ck-box">AUTHORITY Y/N</th>
-                      <th class="in-ck-box">CHECKOUT Y/N</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr
-                      onclick="$(document)
-                        .on('click','.td-click'
-                        ,function(){document.location.href='admin-userdetail.html'})"
-                    >
-                      <td class="in-ck-box td-click">1</td>
-                      <td class="in-ck-box td-click">qussoa</td>
-                      <td class="in-ck-box td-click">ADMIN</td>
-                      <td class="in-ck-box">
-                        <input type="checkbox" />
-                      </td>
-                      <td class="in-ck-box">
-                        <input type="checkbox" />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <!--pagination-->
-                <div class="d-flex justify-content-center">
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                      <li class="page-item">
-                        <a
-                          class="page-link black-text"
-                          href="#"
-                          aria-label="Previous"
-                        >
-                          <span aria-hidden="true" class="black-text"
-                            >&laquo;</span
-                          >
-                          <span class="sr-only">Previous</span>
-                        </a>
-                      </li>
-                      <li class="page-item black-text">
-                        <a class="page-link black-text" href="#">1</a>
-                      </li>
-                      <li class="page-item black-text">
-                        <a class="page-link black-text" href="#">2</a>
-                      </li>
-                      <li class="page-item black-text">
-                        <a class="page-link black-text" href="#">3</a>
-                      </li>
-                      <li class="page-item black-text">
-                        <a
-                          class="page-link black-text"
-                          href="#"
-                          aria-label="Next"
-                        >
-                          <span aria-hidden="true" class="black-text"
-                            >&raquo;</span
-                          >
-                          <span class="sr-only black-text">Next</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
+            <aside class="col-2 px-0  " id="left" style="top:250px; position: fixed; left: 0;">
+    
+                <div class="list-group w-100">
+                  <a href="admin-main.html" class="list-group-item">관리자 홈</a>
+                  <a href="admin-user-list.html" class="list-group-item"
+                    >회원관리</a
+                  >
+                  <a href="admin-pro-list.html" class="list-group-item">상품관리</a>
+                  <a href="admin-order-list.html" class="list-group-item"
+                    >주문관리</a
+                  >
+                  <a href="admin-qty-list.html" class="list-group-item">재고관리</a>
+                  <a href="admin-review-list.html" class="list-group-item"
+                    >리뷰관리</a
+                  >
+                  <a href="admin-qna-list.html" class="list-group-item">Q&A관리</a>
                 </div>
-                <!--pagination end-->
-              </div>
+    
+            </aside>
+          
+            <main class="col offset-2 h-100 user-main">
+                <!--detail pages 정보 -->
+      <div class="container">
+        <div class="row">
+          <img
+            src="../img/dress1.jpg"
+            style="width: 300px; height: 300px; margin-right: 70px; margin-top: 100px;"
+          />
+          <!--detail box-->
+          <div
+            class="detail-box"
+            style="margin-left: 70px; margin-bottom: 100px;"
+          >
+            <div class="mb-3 mt-5">
+              <h2 class="black-text">White pants</h2>
+              <span>15000won</span>
             </div>
-          </main>
+            <hr style="border: 1px solid #252c41;" />
+            <br />
+
+            <div class="col">
+              <label class="mr-5">COLOR/SIZE</label>
+              <ul class="menu">
+                <li>BLACK S(20)</li>
+                <li>BLACK M(20)</li>
+                <li>BLACK L(20)</li>
+                <li>RED S(20)</li>
+                <li>RED M(20)</li>
+                <li>RED L(20)</li>
+                <li>WHITE S(20)</li>
+                <li>WHITE M(20)</li>
+                <li>WHITE L(20)</li>
+              </ul>
+            </div>
+            <div class="col mb-5">
+              <label class="mr-5">QUAN·TITY</label>
+              <span>180개</span>
+              <br/>
+              <lavel class="mr-5">TOTAL</lavel>
+              <span>2,700,000won</span>
+            </div>
+
+            <!-- 장바구니 상품 button -->
+            <div class="d-flex justify-content-end mb-5">
+              <button
+                class="mr-2 bt-bbs-style ad-pro-list"
+                onclick="$(document).on('click','.ad-pro-list',function(){document.location.href='admin-pro-list.html'})"
+              >
+                목록
+              </button>
+              <!-- 회원일시 보이는 버튼-->
+              <button
+                class="mr-2 bt-bbs-style ad-pro-update"
+                onclick="$(document).on('click','.ad-pro-update',function(){document.location.href='admin-pro-update.html'})"
+              >
+                수정
+              </button>
+              <button class="mr-2 bt-bbs-style">
+                삭제
+              </button>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- end -->
+            </main>
+        </div>
+    </div>
+    
+      
     </article>
-  </body>
+
 
   <!-- footer include -->
   <footer class="bg-gray mt-5">
