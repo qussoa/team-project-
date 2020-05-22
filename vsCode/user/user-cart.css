@@ -1,0 +1,98 @@
+.step_location {
+  text-align: right;
+}
+
+.step_location > span:first-child {
+  padding-left: 0;
+}
+
+.step_location .on {
+  width: 107px;
+  height: 19px;
+  color: #f1404b;
+}
+
+.step_location > span {
+  margin-left: 9px;
+}
+
+.step_location {
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.step_location_2 {
+  width: 112px;
+  height: 19px;
+}
+
+.step_location_3 {
+  width: 87px;
+  height: 19px;
+}
+
+.cart_goods {
+  margin-top: -24px;
+  padding: 0 0 20px;
+}
+
+#ct_cont {
+  margin-bottom: 20px;
+}
+
+.prod_header {
+  position: relative;
+  padding-left: 53px;
+  height: 46px;
+  border-top: 2px solid #252c41;
+  border-bottom: 1px solid #d6dadd;
+}
+
+.prod_header .chk_type {
+  top: 10px;
+}
+#cart .chk_type {
+  position: absolute;
+  left: 20px;
+}
+
+.chk_type {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #f1404b;
+  cursor: pointer;
+}
+
+label {
+  margin-top: -1px;
+}
+
+input[type="checkbox"] {
+  width: 13px;
+  height: 13px;
+  vertical-align: text-top;
+}
+
+.chk-type input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.chk_type .click_deal {
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.blind {
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  opacity: 0;
+  clip: rect(0 0 0 0);
+}
