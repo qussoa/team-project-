@@ -1,13 +1,3 @@
-/* title font*/
-.h-title {
-  text-decoration: none;
-  font-family: "GmarketSansBold";
-}
-.h-title:hover {
-  text-decoration: none;
-  color: #f1404b;
-}
-
 tbody-style {
   border: none;
 }

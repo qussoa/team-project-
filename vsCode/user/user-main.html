@@ -23,6 +23,13 @@
     $(document).on("click", ".scope", function () {
       (".scope");
     });
+    $(function () {
+      $(".starRev span").click(function () {
+        $(this).parent().children("span").removeClass("on");
+        $(this).addClass("on").prevAll("span").addClass("on");
+        return false;
+      });
+    });
   </script>
   <body>
     <!--header include-->
@@ -36,7 +43,7 @@
           </li>
           <!-- annonimous& authentication-->
           <li class="nav-item">
-            <a class="nav-link">login</a>
+            <a class="nav-link black-text" href="login.html">login</a>
           </li>
           <li class="nav-item">
             <a class="nav-link">logout</a>
@@ -48,7 +55,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link">join</a>
+            <a class="nav-link black-text" href="join.html">join</a>
           </li>
         </ul>
       </div>
@@ -136,7 +143,7 @@
               <a class="nav-link nav-atag" href="./user-qna.html">문의내역</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-atag" href="#">개인정보</a>
+              <a class="nav-link nav-atag" href="./user-pass.html">개인정보</a>
             </li>
           </ul>
         </nav>
@@ -249,7 +256,13 @@
                   </div>
                 </td>
                 <td class="review_write">
-                  <button class="review-btn">리뷰쓰기</button>
+                  <button
+                    class="review-btn"
+                    data-toggle="modal"
+                    data-target="#staticBackdrop"
+                  >
+                    리뷰쓰기
+                  </button>
                 </td>
               </tr>
               <tr>
@@ -469,7 +482,9 @@
                   </div>
                 </td>
                 <td class="review_write">
-                  <button class="review-btn">리뷰쓰기</button>
+                  <button class="review-btn">
+                    리뷰쓰기
+                  </button>
                 </td>
               </tr>
               <tr>
@@ -621,4 +636,62 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="staticBackdrop"
+    data-backdrop="static"
+    data-keyboard="false"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+    style="top: 250px;"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title m_tit" id="staticBackdropLabel">리뷰쓰기</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <label>제목</label>
+            <input class="md_tit" type="text" />
+            <!--별점-->
+            <div class="starRev one-line">
+              <label class="la_st_box">
+                별점
+                <input
+                  type="range"
+                  min="0"
+                  max="5"
+                  step="1"
+                  onmousemove="rangevalue1.value=value"
+                />
+                <output class="ran_output" id="rangevalue1"></output>
+              </label>
+              <span class="md_sub">*상품의 별점을 1~5까지 선택해주세요</span>
+            </div>
+          </div>
+          <textarea class="txt_box"></textarea>
+          <input type="file" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="bt_save" data-dismiss="modal">
+            닫기
+          </button>
+          <button type="button" class="bt_save">저장</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </html>
